@@ -1,0 +1,148 @@
+/* Fuente y variables globales */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f6f7;
+    --text-color: #2c3e50;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.payment-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 40px;
+}
+
+/* Detalles del Carrito */
+.cart-details {
+    flex: 1;
+    background-color: #f9fafb;
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.cart-details h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e4e6;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+    background-color: #f1f3f4;
+}
+
+.item-name {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.item-details {
+    display: flex;
+    gap: 15px;
+    color: #7f8c8d;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+/* Formulario de Pago */
+.payment-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-form h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+.form-input {
+    padding: 12px;
+    border: 1px solid #d1d8e0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.submit-button {
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .payment-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+}

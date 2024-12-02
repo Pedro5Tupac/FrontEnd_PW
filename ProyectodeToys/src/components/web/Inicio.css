@@ -1,0 +1,546 @@
+/* General styles for header */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+     /* Cambia este color según tu preferencia */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Logo styling */
+#logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#logo-image {
+    width: 250px; /* Ajusta el tamaño según prefieras */
+    height: auto;
+    margin-right: 10px;
+    margin-left: 100px;
+}
+
+/* Main menu styling */
+#menu {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos del menú */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Cambia el color según prefieras */
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    color: red; /* Cambia el color al hacer hover */
+}
+
+/* Social icons styling */
+#social-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre los íconos sociales */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon {
+    width: 30px; /* Tamaño de los íconos sociales */
+    height: auto;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    opacity: 0.7; /* Efecto al pasar el mouse */
+}
+
+/* DISEÑO PARA LAS DIVISIONES PRINCIPALES */
+
+.banner-section,
+.novedades-section,
+.categorias-section,
+.ver-mas,
+.info,
+.productos-mas-vendidos,
+.productos-section,
+.ver-mas2,
+.pie-pagina,
+.ver-mas3,
+.preventas {
+    margin-bottom: 0px;
+    padding: 1px;
+    background-color: rgba(67, 125, 212, 0.853);
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner Section */
+.banner-section ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.banner-section img {
+    width: 100%;
+    height: 300px;
+    
+    border-radius: 5px;
+}
+
+/* Novedades Section */
+.novedades-section h2 {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.novedades-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.novedades-section ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(16.6% - 15px); /* 3 columnas, ajusta según sea necesario */
+    margin-bottom: 15px;
+}
+
+.novedades-section img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Categorias Section */
+.categorias-section{
+    text-align: center;
+}
+.categorias-section button {
+    font-size: 1em;
+    padding: 10px 30px 10px;
+    display: inline-block;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: red;
+    color: #fff;
+    border: none;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categorias-section button:hover {
+    background-color: #0056b3;
+}
+
+.categorias-section ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.categorias-section img {
+    width: 100%;
+
+    height: 400px;
+    border-radius: 5px;
+}
+
+/* Productos Section */
+.productos-section h2 {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.productos-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.productos-section img {
+    width: 250px;
+ 
+    height: 300px;
+    border-radius: 5px;
+}
+
+.ver-mas{
+    text-align: center;
+}
+
+.ver-mas button{
+    font-size: 1em;
+    padding: 10px 30px 10px;
+    display: inline-block;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: red;
+    color: #fff;
+    border: none;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ver-mas ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+}
+
+.ver-mas img{
+    width: 100%;
+
+    height: 400px;
+    border-radius: 5px;
+}
+
+.info{
+    display: flex;
+    gap: 150px;
+}
+.info aside{
+    color: white;
+}
+.info button{
+    background-color: red;
+    color: white;
+}
+.info button:hover{
+    background-color: orange;
+
+}
+.info img{
+    width: 100%;
+    margin-right: 50px;
+    height: 200px;
+    
+    border-radius: 5px;
+}
+
+.productos-mas-vendidos h2{
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+.productos-mas-vendidos img{
+    width: 250px;
+ 
+    height: 300px;
+    border-radius: 5px;
+    
+}
+.productos-mas-vendidos ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.ver-mas2{
+    text-align: center;
+}
+
+.ver-mas2 button{
+    font-size: 1em;
+    padding: 10px 30px 10px;
+    display: inline-block;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: red;
+    color: #fff;
+    border: none;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ver-mas2 ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+}
+
+.ver-mas2 img{
+    width: 100%;
+
+    height: 400px;
+    border-radius: 5px;
+}
+
+
+.preventas h2 {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.preventas ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.preventas img {
+    width: 250px;
+ 
+    height: 300px;
+    border-radius: 5px;
+}
+
+.ver-mas3{
+    text-align: center;
+}
+
+.ver-mas3 button{
+    font-size: 1em;
+    padding: 10px 30px 10px;
+    display: inline-block;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: red;
+    color: #fff;
+    border: none;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+
+
+/* PIE PAGINA */
+.pie-pagina {
+    border-top: 3px solid white;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para las listas dentro del pie de página */
+.pie-pagina ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px; /* Espacio entre las listas */
+}
+
+/* Estilos para cada sección de la lista */
+.pie-pagina ul li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para los enlaces dentro de las listas */
+.pie-pagina ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.pie-pagina ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las imágenes dentro del pie de página */
+.pie-pagina img {
+    width: 100%;
+    max-width: 60px; /* Ajusta según sea necesario */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sub1{
+    text-decoration: underline;
+
+}
+
+.search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1000;
+}
+
+
+.search-bar {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+
+.search-bar-input {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+
+.search-bar-close {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 0 15px;
+    cursor: pointer;
+    outline: none;
+    color: #333;
+}
+
+.search-bar-close:hover {
+    color: red;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #ff0000; 
+}
+
+
+.productos-section li {
+    width: calc(16.6% - 15px); /* 6 columns */
+    margin-bottom: 15px;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.product-link:hover {
+    transform: scale(1.05);
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-details h3 {
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.product-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Ensure other sections maintain similar styling */
+.novedades-section li,
+.categorias-section li,
+.productos-mas-vendidos li,
+.preventas li {
+    width: calc(16.6% - 15px);
+    margin-bottom: 15px;
+}

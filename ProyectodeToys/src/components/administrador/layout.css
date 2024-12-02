@@ -1,0 +1,73 @@
+/* Reset global */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc;
+  }
+  
+  /* Layout general */
+  .layout {
+    display: flex; /* Flexbox para posicionar sidebar y contenido */
+    height: 100vh; /* Altura completa del viewport */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+  }
+  
+  .layout .sidebar {
+    width: 16rem; /* Ancho fijo de la barra lateral */
+    height: 100vh; /* Garantiza altura completa */
+    background: linear-gradient(to bottom, #4c51bf, #3c366b);
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .layout .content {
+    flex: 1; /* El contenido toma el espacio restante */
+    background-color: #f7fafc;
+    padding: 2rem;
+    overflow-y: auto; /* Scroll si el contenido crece */
+  }
+  
+  /* Sidebar estilos */
+  .sidebar h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar a {
+    display: block; /* Asegura que cada enlace ocupe una línea completa */
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: background 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background: #5a67d8;
+  }
+  
+  .sidebar a.active {
+    background: #667eea;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .layout {
+      flex-direction: column; /* Cambia el layout a vertical */
+    }
+  
+    .sidebar {
+      width: 100%; /* La barra lateral ocupa todo el ancho */
+      height: auto; /* Ajusta su altura automáticamente */
+    }
+  
+    .content {
+      padding: 1rem; /* Reduce el padding en pantallas pequeñas */
+    }
+  }
+  

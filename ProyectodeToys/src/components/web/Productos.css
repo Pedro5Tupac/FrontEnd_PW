@@ -1,0 +1,257 @@
+/* ProductosCategoria.css */
+
+/* Estilo del encabezado principal */
+#main-header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+#logo-link {
+    display: flex;
+    align-items: center;
+}
+
+#logo-image {
+    width: 120px;
+    height: auto;
+}
+
+/* Menú principal */
+#menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    font-size: 1rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu-link:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/* Íconos sociales */
+#social-icons {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+/* Producto contenedor principal */
+.producto-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de imágenes */
+.imagenes-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    gap: 15px;
+}
+
+.imagen-principal img {
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagen-principal img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Miniaturas */
+.imagenes-secundarias {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.imagenes-secundarias img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.imagenes-secundarias img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.imagenes-secundarias img.selected {
+    border-color: #007bff;
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de información del producto */
+.producto-info {
+    text-align: left;
+    margin-left: 30px;
+    max-width: 600px;
+}
+
+.producto-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.producto-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.producto-info p strong {
+    color: #333;
+}
+
+.btn-agregar-carrito {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-agregar-carrito:hover {
+    background-color: #0056b3;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Descripción del producto */
+.descripcion {
+    margin-top: 20px;
+}
+
+.descripcion h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.descripcion p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1000;
+}
+
+
+.search-bar {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+
+.search-bar-input {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+
+.search-bar-close {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 0 15px;
+    cursor: pointer;
+    outline: none;
+    color: #333;
+}
+
+.search-bar-close:hover {
+    color: red;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #ff0000; 
+}
